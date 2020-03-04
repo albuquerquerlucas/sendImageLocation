@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="LOCALIZAÇÃO"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#757575"/>
+
+    <TextView
+        android:id="@+id/txt_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="Latitude :"/>
+
+    <TextView
+        android:id="@+id/txt_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="Longitude :"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="GPS"/>
+
+            <Button
+                android:id="@+id/btn_coordenadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="LOCALIZAR"/>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:text="IMAGEM"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#757575"/>
+
+    <ImageView
+        android:id="@+id/img_foto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_galeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GALERIA"/>
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CÂMERA"/>
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR"/>
+    </LinearLayout>
+</LinearLayout>
